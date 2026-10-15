@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Water, Wastewater & VRD Engineering</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #0284c7;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-light: #64748b;
+        }
 
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--secondary);
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            color: var(--text-light);
+            font-size: 0.98rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--bg);
+            padding-bottom: 8px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        .project-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 16px;
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background-color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header / Bio -->
+        <header>
+            <h1>Water, Wastewater & VRD Engineer</h1>
+            <p class="subtitle">Hydraulic Modeling | Urban Infrastructure | GIS</p>
+            <p class="bio">
+                Engineer specializing in Water, Sanitation, and Waste Engineering. Focused on hydraulic network sizing (drinking water supply, stormwater, and wastewater), dynamic modeling, and VRD design.
+            </p>
+        </header>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">EPA SWMM</span>
+                <span class="skill-tag">EPANET</span>
+                <span class="skill-tag">QGIS / ArcGIS</span>
+                <span class="skill-tag">AutoCAD / Civil 3D</span>
+                <span class="skill-tag">Open Channel Hydraulics</span>
+                <span class="skill-tag">Pressurized Flow</span>
+                <span class="skill-tag">VRD Calculations & Sizing</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects & Engineering Works</h2>
+            
+            <div class="project-card">
+                <div class="project-title">Urban Stormwater Network Sizing & Dynamic Modeling (EPA SWMM)</div>
+                <p style="font-size: 0.9rem; color: var(--text-light);">
+                    Comprehensive hydraulic study, watershed delineation in GIS, peak flow calculation, and dynamic simulation integrating Sustainable Drainage Systems (LID/BMP).
+                </p>
+                <a href="https://github.com/ads802317-ship-it/urban-drainage-swmm-vrd" target="_blank" class="btn">View Technical Files on GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Water Distribution Network Modeling (EPANET)</div>
+                <p style="font-size: 0.9rem; color: var(--text-light);">
+                    Hydraulic analysis of a drinking water distribution system, verifying node pressures, pipe velocities, and storage tank dimensions.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience & Fieldwork -->
+        <section>
+            <h2>Experience & Field Visits</h2>
+            <p style="margin-bottom: 10px;"><strong>Internship — Loukkos Hydraulic Basin Agency (ABHL)</strong></p>
+            <p style="font-size: 0.9rem; color: var(--text-light); margin-bottom: 15px;">
+                Flood vulnerability mapping using QGIS/ArcGIS, hydrogeological monitoring, and watershed data analysis.
+            </p>
+            
+            <p style="margin-bottom: 10px;"><strong>Technical Field Visits</strong></p>
+            <p style="font-size: 0.9rem; color: var(--text-light);">
+                Process analysis at Wastewater Treatment Plants (STEP) and Water Production Facilities.
+            </p>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Professional Engineering Portfolio — Water, Wastewater & VRD</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
